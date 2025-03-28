@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 368px;
+    height: 420px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+    padding: 16px;
+    background-color: white;
+    justify-content: space-between; /* Keeps author-info at bottom */
+}
+
+.img-div {
+    margin-bottom: 16px;
+}
+
+img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+button {
+    color: rgb(97, 12, 176);
+    font-weight: 600;
+    padding: 4px 15px;
+    margin: 16px 0;
+    font-size: 14px;
+    background-color: rgba(151, 55, 240, 0.1);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.descrip {
+    font-weight: 440;
+    color: rgb(111, 110, 110);
+    margin: 6px 0 20px 0;
+    font-size: 15px;
+}
+
+.line {
+    background-color: rgba(27, 26, 26, 0.1);
+    height: 2px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.author {
+    color: rgb(115, 114, 114);
+    font-weight: 440;
+    text-align: center;
+}
+
+.author-info {
+    position: fixed;
+    bottom: 10px; /* Screen ke bilkul neeche fix ho jayega */
+    left: 50%;
+    transform: translateX(-50%); /* Center me lane ke liye */
+    font-size: 14px;
+    text-align: center;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    text-decoration: none;
+    color: rgb(97, 12, 176);
+}
+
+/* Responsive Design for Mobile Screens */
+@media screen and (max-width: 412px) {
+    .box {
+        width: 90%;
+        height: auto; /* Adjusts height dynamically */
+        padding: 12px;
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+
+    .descrip {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 3px 10px;
+    }
+
+    .author-info {
+        font-size: 12px;
+    }
+}
